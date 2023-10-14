@@ -22,21 +22,17 @@ class Ninja {
   
 }
 
-
 const ninja = new Ninja("Ryu", 100, 3, 3);
 
 ninja.sayName();
 ninja.showStats();
 ninja.drinkSake();
 
+// ---------- SENSEI CLASS -------------------
 
 class Sensei extends Ninja {
   constructor(name) {
-    super(name, health, speed, strength);
-
-    this.health = 200;
-    this.speed = 10;
-    this.strength = 10
+    super(name, 200, 10, 10);
   }
 
   speakWisdom(){
