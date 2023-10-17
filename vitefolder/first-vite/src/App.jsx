@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import PersonCard from './Components/PersonCard'
 import './App.css'
 
 function App() {
@@ -21,9 +22,16 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+          <li>One Item</li>
+          <li>Two Item</li>
+          <li>Three Item</li>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+        <PersonCard firstName={"Instructor Bob"} age={ 32 } hairColor={"Pumpkin"} />
+        <PersonCard firstName={"Instructor Jill"} age={ 50 } hairColor={"Grey"} />
+        <PersonCard firstName={"Instructor Marty"} age={23} hairColor={"Purple"} />
+        <PersonCard firstName={"Instructor Frank"} age={ 40 } hairColor={"Yellow"} />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
