@@ -22,13 +22,14 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-          <li>One Item</li>
-          <li>Two Item</li>
-          <li>Three Item</li>
+          <h1>One Item</h1>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-        <PersonCard firstName={"Instructor Bob"} age={ 32 } hairColor={"Pumpkin"} />
+        <PersonCard firstName={"Instructor Bob"} age={ 32 } hairColor={"Pumpkin"}>
+          <h1>Testasdfasdf</h1>
+          <h1>Testasdfasdf</h1>
+        </PersonCard>
         <PersonCard firstName={"Instructor Jill"} age={ 50 } hairColor={"Grey"} />
         <PersonCard firstName={"Instructor Marty"} age={23} hairColor={"Purple"} />
         <PersonCard firstName={"Instructor Frank"} age={ 40 } hairColor={"Yellow"} />

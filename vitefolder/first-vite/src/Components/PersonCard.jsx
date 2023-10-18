@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import StyledBox from "./StyledBox"; 
 
 
 const PersonCard = (props) => {
@@ -18,7 +19,14 @@ const PersonCard = (props) => {
       </div>
 
       <div>
-        <button onClick={ handleClick }>Update Birthday</button>
+        <StyledBox bgColor="blue"/>
+        <div>In the Box?</div>
+        <StyledBox bgColor="red" height="200px"/>
+        <button className="btn" onClick={ handleClick }>Update Birthday</button>
+      </div>
+
+      <div className="additional-info">
+        <h1>{ props.children }</h1>
       </div>
     </>
 );
